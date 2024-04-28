@@ -16,7 +16,7 @@
         <link rel="prev" href="../../courses/fds/">
       
       
-        <link rel="next" href="../python/1.basic/">
+        <link rel="next" href="../mkdocs/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -387,7 +387,7 @@
         
   
   <span class="md-ellipsis">
-    Fds
+    fds
   </span>
   
 
@@ -484,6 +484,27 @@
   
   
   
+    <li class="md-nav__item">
+      <a href="../mkdocs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    1. 概述
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
     
     
     
@@ -497,10 +518,10 @@
         
           
         
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_2" >
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_3" >
         
           
-          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -511,8 +532,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_2">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3">
             <span class="md-nav__icon md-icon"></span>
             Python
           </label>
@@ -608,11 +629,13 @@
                   
 
 
-<pre><code>一些其它可能需要的知识：
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>一些其它可能需要的知识：
 1. shell的基础知识，毕竟你要用git bash 嘛。shell有一些通用的基础操作，比如CURL + L清空终端，touch 创建文件。
-2. vim的基础知识，commit提交的时候可能会进入vi 编辑模式。可以参考我的后文。
-3. 网络的基础知识，毕竟github现在不翻墙几乎上不去，你也最好了解IP地址，域名domain之类的概念。
-</code></pre>
+2. vim的基础知识，commit提交的时候可能会进入vi 编辑模式。
+3. 网络的基础知识，毕竟github现在不翻墙几乎上不去，你也最好了解IP地址，域名domain之类的概念。</p>
+</div>
 <h1 id="git">什么是Git？</h1>
 <p>当今世界上使用最广泛的<font color = red>分布式版本控制器</font>,是一个优质的开源项目。（你无需支付任何费用就可以使用）</p>
 <h1 id="git_1">如何安装Git？</h1>
@@ -630,17 +653,21 @@ git config --global user.email &quot;eparis@atlassian.com&quot;
   执行此命令将在当前工作目录创建一个新的.git子目录（隐藏文件，也将创建一个新的主分支
   在未初始化的情况下执行大多数git命令，将会得到以下报错
   <code>fatal: not a git repository (or any of the parent directories): .git</code>
-  也许和你想象的不太一样，你可以安全地在一个已经运行过git init 的项目目录上再次运行该命令。它不会覆盖现有的.git配置。
-  <font color = red>切记：不要手动乱改.git文件，否则会破坏git仓库，.git文件的东西远比你想的要复杂</font></p>
+  也许和你想象的不太一样，你可以安全地在一个已经运行过git init 的项目目录上再次运行该命令。它不会覆盖现有的.git配置。</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>切记：不要手动乱改.git文件，否则会破坏git仓库，.git文件的东西远比你想的要复杂</p>
+</div>
 <h2 id="_1">克隆</h2>
 <p>用于创建远程代码库的副本或克隆。目标代码存储库可以是本地的也可以是远程的。
   <code>git clone &lt;repo url&gt;</code>
   下载一个项目和它的整个代码历史
   其中url支持多种格式，如Git SSH URL：
-  <code>git@HOSTNAME:USERNAME/REPONAME.git</code>
-  - 运行git init 和git clone都能在你的电脑上得到一个可用的git仓库，那它们有没有什么区别呢？
-    省流：git clone 依赖于git init
-    实际上 git clone 会先调用git init 来创建新的存储库，然后再从现有存储库中复制数据。</p>
+  <code>git@HOSTNAME:USERNAME/REPONAME.git</code></p>
+<p>!!!note
+    运行git init 和git clone都能在你的电脑上得到一个可用的git仓库，那它们有没有什么区别呢？
+      省流：git clone 依赖于git init
+      实际上 git clone 会先调用git init 来创建新的存储库，然后再从现有存储库中复制数据。</p>
 <h2 id="git-add-git-commit">保存变更：git add &amp; git commit</h2>
 <p>git add 会将文件添加到代码库暂存区域并创建一个包含消息的新提交。
   <code>git add &lt;file&gt;</code>
@@ -653,8 +680,11 @@ git config --global user.email &quot;eparis@atlassian.com&quot;
   git commit -a
   提交工作区自上次commit的变化，直接到仓库区
   <code>git commit -m "commit message"
-  git commit -am "commit message"</code>
- 规范格式使用少于50个字符在第一行汇总提交，留一个空行，然后详细解释发生了什么变化。</p>
+  git commit -am "commit message"</code></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>规范格式使用少于50个字符在第一行汇总提交，留一个空行，然后详细解释发生了什么变化。</p>
+</div>
 <h2 id="_2">忽略特殊文件：</h2>
 <p>在git工作区的根目录下创建一个特殊的.gitignore文件，然后把要忽略的文件名填进去，git就会自动忽略这些文件。
   一些常见的被忽略的文件如下。
@@ -701,10 +731,15 @@ git config --global user.email &quot;eparis@atlassian.com&quot;
 <h2 id="git-ssh">什么是Git SSH 秘钥？</h2>
 <p>SSH密钥是SSH网络协议的访问凭证，用于不安全开放网络计算机之间的远程通信
   如何创建？
-  通过公钥加密算法生成，最常见的是RSA或DSA
-  <font color = blue>建议使用ed25519的key:</font>
-  <code>ssh-keygen -t ed25519</code>
-  - <font color = red>请注意保护你的私钥。</font>公钥(.pub结尾)可以发给别人或上传到Github Settings中，私钥（无后缀名）永远不要放到网络上。（毕竟你也不想···</p>
+  通过公钥加密算法生成，最常见的是RSA或DSA</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>建议使用ed25519的key:ssh-keygen -t ed25519</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p><font color = red>请注意保护你的私钥。</font>公钥(.pub结尾)可以发给别人或上传到Github Settings中，私钥（无后缀名）永远不要放到网络上。<del>（毕竟你也不想···</del></p>
+</div>
 <h2 id="branch">Branch</h2>
 <p>列出储存库中的分支。
   <code>git branch 列出所有本地分支
@@ -795,6 +830,8 @@ git config --global user.email &quot;eparis@atlassian.com&quot;
         <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
       
         <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+        <script src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
       
     
   </body>
