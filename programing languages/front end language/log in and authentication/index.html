@@ -756,13 +756,49 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      访问限制：
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      作用范围：
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#csrfsamesite" class="md-nav__link">
+    <span class="md-ellipsis">
+      CSRF和SameSite
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
+  <a href="#cors" class="md-nav__link">
+    <span class="md-ellipsis">
+      CORS
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
     <span class="md-ellipsis">
       密码学知识科普
     </span>
@@ -771,7 +807,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
+  <a href="#_6" class="md-nav__link">
     <span class="md-ellipsis">
       一些常见的鉴权实现：
     </span>
@@ -1016,13 +1052,49 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      访问限制：
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      作用范围：
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#csrfsamesite" class="md-nav__link">
+    <span class="md-ellipsis">
+      CSRF和SameSite
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
+  <a href="#cors" class="md-nav__link">
+    <span class="md-ellipsis">
+      CORS
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
     <span class="md-ellipsis">
       密码学知识科普
     </span>
@@ -1031,7 +1103,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
+  <a href="#_6" class="md-nav__link">
     <span class="md-ellipsis">
       一些常见的鉴权实现：
     </span>
@@ -1070,17 +1142,42 @@
     + 如果两者都有则以MaxAge为准
 * Session cookie:
   如果没有设置上述两个生命周期属性，浏览器会将其视作session cookie，其会在整个"session"内保留，直到"session"结束后删除。</p>
-<h2 id="_3">密码学知识科普</h2>
+<h3 id="_3">访问限制：</h3>
+<p>浏览器提供了HttpOnly属性来限制前端主动访问cookie，这样cookie就只能在http请求中携带。但是浏览器知识限制了部分js接口，不代表这个属性绝对安全。
+Secure 属性可以限制只有使用https协议的请求可以携带/设置cookie，这样可以尽可能防止cookie在传输过程中被泄露。
+<font color = blue>所以https的s其实是secure</font></p>
+<h3 id="_4">作用范围：</h3>
+<p>Domain 和 Path 可以限制cookie所属的网站：
+* Domain 限制了cookie所属的域名。
+* Path限制了cookie所属的子路径。
+* 不同范围内可以有重名的cookie。</p>
+<h3 id="csrfsamesite">CSRF和SameSite</h3>
+<p><a href="https://baike.baidu.com/item/%E8%B7%A8%E7%AB%99%E8%AF%B7%E6%B1%82%E4%BC%AA%E9%80%A0/13777878?fr=ge_ala">CSRF</a>：跨站请求伪造
+Site：一般来说，域名服务商只售卖xxx.xx这样的二级域名，比如你现在所看到的这个网页(<a href="https://kagunanana.site">https://kagunanana.site</a>)，再扩展的多级域名都属于二级域名持有者。因此我们将二级域名相同的网址成为SameSite。
+Origin:比site要严格很多，要求两个网址的schema,host,port完全相同。</p>
+<h2 id="cors">CORS</h2>
+<p><a href="https://baike.baidu.com/item/CORS/16411212?fr=ge_ala">CORS</a>可以限制一个请求的来源和可访问资源。CORS在origin级别限制请求，其本质是基于请求HEADER的一种约定限制。</p>
+<h2 id="_5">密码学知识科普</h2>
 <ul>
 <li>Hash,利用难以求反函数的Hash函数来加密数据，不可逆</li>
 <li>对称加密，使用一个保密的秘钥，可以使用秘钥对信息进行解密</li>
 <li>非对称加密，常用算法有RSA ed25519(就是 <a href="https://kagunanana.site/programing%20languages/git/">git</a> 那一章中生成ssh秘钥的算法)。有两个成对的秘钥，分为秘钥和公钥，其中一个秘钥加密的信息，只有用另一个秘钥才能解密。</li>
-<li>加盐。</li>
-<li>签名</li>
-<li>TLS</li>
+<li>加盐。当Hash空间太小时，其实可以用暴力枚举的方式，生成一张反函数表来破解加密。所以，我们Hash时，一般都要在原信息中拼接一段随机信息来保证长度。这一串拼接的byte就被称作"salt"，这个过程也就叫做加盐。</li>
+<li>签名：一种防止公开消息被篡改的方式。常用的有MAC，可以理解为带密码的Hash,只有持有秘钥的人才能Hash出相同值。</li>
+<li>TLS:HTTP 通过TLS协议保证安全性。</li>
 <li>对称+非对称混合加密</li>
 </ul>
-<h2 id="_4">一些常见的鉴权实现：</h2>
+<h2 id="_6">一些常见的鉴权实现：</h2>
+<ol>
+<li>Token
+   用户在登陆后服务端生成一个代表其身份的令牌，即token。然后服务端将这个token返回给客户端，之后客户使用这个token进行请求。</li>
+<li>Session
+   token的简单实现</li>
+<li>JWT
+   token的特殊实现</li>
+<li>Oauth
+   用于第三方授权的鉴权方式。</li>
+</ol>
 
 
 

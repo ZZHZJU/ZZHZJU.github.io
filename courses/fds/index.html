@@ -487,9 +487,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#heap" class="md-nav__link">
+  <a href="#heappriority-queue" class="md-nav__link">
     <span class="md-ellipsis">
-      Heap
+      Heap(Priority Queue)
     </span>
   </a>
   
@@ -547,20 +547,44 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#4" class="md-nav__link">
+  <a href="#4-network-flow" class="md-nav__link">
     <span class="md-ellipsis">
-      4.
+      4.网络流 Network Flow
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#5" class="md-nav__link">
+  <a href="#5-mst" class="md-nav__link">
     <span class="md-ellipsis">
-      5.
+      5.最小生成树 MST
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="5.最小生成树 MST">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#prim" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prim算法(针对顶点)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kruskal" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kruskal算法(针对边)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -1131,9 +1155,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#heap" class="md-nav__link">
+  <a href="#heappriority-queue" class="md-nav__link">
     <span class="md-ellipsis">
-      Heap
+      Heap(Priority Queue)
     </span>
   </a>
   
@@ -1191,20 +1215,44 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#4" class="md-nav__link">
+  <a href="#4-network-flow" class="md-nav__link">
     <span class="md-ellipsis">
-      4.
+      4.网络流 Network Flow
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#5" class="md-nav__link">
+  <a href="#5-mst" class="md-nav__link">
     <span class="md-ellipsis">
-      5.
+      5.最小生成树 MST
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="5.最小生成树 MST">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#prim" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prim算法(针对顶点)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kruskal" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kruskal算法(针对边)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -1233,30 +1281,118 @@
 <p>我是zjk班的，zjk算是fds的老师里面最好的了，他规则其实放得比较宽松，小测可以线上提交，project错过了peer review 提交期限可以直接交给助教而且不扣分。不过他的小测是当点名，所以每次都是突击小测。</p>
 <p>这门课从今年（2024春夏学期）开始 bonus 和 hard 的加分不再加到总评上，仅加平时分（除了期末考试都是平时分，共60分），超出60分不溢出，也就是平时分最多60分。</p>
 <h2 id="stack">Stack</h2>
+<ul>
+<li>LIFO(Last-in-First-out)，意味着进出栈会倒序</li>
+<li>操作：</li>
+<li>Push 入栈，将一个元素添加到栈顶</li>
+<li>Pop 出栈，将栈顶元素弹出</li>
+</ul>
 <h2 id="queue">Queue</h2>
+<ul>
+<li>FIFO(First-in-First-out)</li>
+<li>操作：</li>
+<li>Enqueue 入队，将一个元素添加到队尾</li>
+<li>Dequeue 出队，将队首元素删除</li>
+<li>循环队列(Circular Queue)</li>
+<li>在Queue结构里面增加一个变量 size</li>
+<li>或者少用一格</li>
+</ul>
 <h2 id="tree">Tree</h2>
 <h3 id="traversal">Traversal</h3>
+<ul>
+<li>前、中、后序遍历：递归地进行，如果要改成迭代的话需要自己定义栈去模拟系统栈。</li>
+<li>层序遍历：需要queue去装已访问节点
+<font color = red>我期中考试的编程题是这个</font></li>
+</ul>
 <h3 id="bstbinary-search-tree">BST(Binary Search Tree)</h3>
-<h3 id="heap">Heap</h3>
+<ul>
+<li>递归的定义：</li>
+<li>左子节点的值小于根节点</li>
+<li>右子节点的值大于根节点</li>
+<li>左右子树都是BST</li>
+<li>操作：</li>
+<li>Find,查找指定值，递归地进行查询</li>
+<li>Insert,插入一个新的值，先调用Find找合适位置再插入</li>
+<li>Delete,删除指定值，先调用Find找到位置，再分两种情况操作，如果是子节点则直接删除，否则用左子树的最右侧节点或者右子树的最左侧节点覆盖。</li>
+</ul>
+<h3 id="heappriority-queue">Heap(Priority Queue)</h3>
+<ul>
+<li>用数组表示，但逻辑上是一颗完全二叉树</li>
+<li>操作：</li>
+<li>Insert，插入一个数，向上调整到合适位置。</li>
+<li>Delete，删除堆顶元素，然后把最后一个元素放到堆顶再向下调整。</li>
+<li>BuildHeap,线性建堆，直接把一组数据读入数组，再从size/2处开始逐一向下调整。</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>其实我们在向上和向下调整时并不是进行交换操作，而是直接覆盖，本质上实在寻找合适的位置插入或者删除。原因是这样做更快，因为交换两个数据需要定义一个中间变量，要做三次赋值而覆盖只需要一次。</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>fds课程的考试中曾经出现过未明确建堆方式的编程题，不知道是该做若干次Insert还是直接线性建堆，这两种建堆方式的结果是不一样的，所以考试时要注意审题。<font color =red>zjk老师给的建议是没说清楚就选择线性建堆。</font></p>
+</div>
 <h3 id="disjoint-set">Disjoint Set</h3>
+<p>用于判断是否是等价类
+操作：
+* Find 查找根节点序号
+* Union 把两个集合并起来
+  1. 普通的Union,什么额外操作都不做
+  2. Union by size,把小的树并在大的树上
+  3. Union by height,把矮的树并在高的树上
+  4. Path Compression,每次合并都直接连到根上面
+  5. Union by size with Path Compression
+  6. Union by rank,因为路径压缩会改变高度，所以只需要知道高度近似值rank就行,相当于Union by height with Path Compression</p>
 <h2 id="graph">Graph</h2>
 <h3 id="1">1.图的基本概念：</h3>
 <ul>
 <li>有向图(undirected graph) / 无向图(directed graph)：区别在于边(edge)是否有方向</li>
+<li>完全图：图中所有节点两两相连，对于N个顶点的图有N(N+1)/2条边</li>
+<li>联通分量：图G的一个最大联通子图</li>
 </ul>
 <h3 id="2">2.拓扑排序：</h3>
-<h3 id="3-dijkstra-algorithm">3.最短路径算法 Dijkstra Algorithm</h3>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>拓扑序不唯一。</p>
+</div>
+<p>基本思路：
+- 寻找删除入度为零的顶点，更新其相邻顶点的入度
+- 重复上述过程，直到图被删空</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>基本思路：</p>
-<ul>
-<li>在所有未访问的顶点中，寻找一个当前和目标距离最短的顶点V</li>
-<li>如果找到了，就将V标记为已访问；如果没找到，即所有顶点都已访问，则终止</li>
-</ul>
+<p>需要一个容器去存放已删除节点，我们可以选择stack或者是queue。一般都选择queue。</p>
 </div>
-<p>代码实现：</p>
-<h3 id="4">4.</h3>
-<h3 id="5">5.</h3>
+<h3 id="3-dijkstra-algorithm">3.最短路径算法 Dijkstra Algorithm</h3>
+<p>基本思路：
+- 在所有未访问的顶点中，寻找一个当前和给定起点距离最短的顶点V
+- 如果找到了，就将V标记为已访问；如果没找到，即所有顶点都已访问，则终止</p>
+<p>时间复杂度：O（<span class="arithmatex">\(|V|^2+|E|\)</span>）</p>
+<h3 id="4-network-flow">4.网络流 Network Flow</h3>
+<p>基本思路：
+- 在图G中找到一条从s到t的路径，可以使用BFS
+- 将这条路径的最短边长从路径中依次减去，更新为反向的边，将这个最短边的数值加入最大流量结果中
+- 重复上述操作直到找不到从s到t的路径</p>
+<p>时间复杂度O（<span class="arithmatex">\(|E|^2log|V|\)</span>）</p>
+<h3 id="5-mst">5.最小生成树 MST</h3>
+<h4 id="prim">Prim算法(针对顶点)</h4>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>最小生成树并不一定唯一，可以参考你的homework，如果存在权重相同的边就有可能会存在多个最小生成树。</p>
+</div>
+<p>基本思路：
+- 任取一个起点
+- 把当前距离起点最近且还未被访问的顶点纳入最小生成树，重复这个过程。
+- 如果最后所有顶点都被纳入则找到一个最小生成树，反之则图不联通，不存在最小生成树。</p>
+<p><font color = blue>其实这个算法和Dijkstra算法很像</font></p>
+<h4 id="kruskal">Kruskal算法(针对边)</h4>
+<p>基本思路：
+- 找当前图中还未被纳入生成树的最小边，如果这条边加入以后不会形成闭环则纳入这条边，反之则舍弃这条边。
+- 重复这个过程直到顶点数-1条边被纳入</p>
+<p>时间复杂度O(<span class="arithmatex">\(|E|log|E|\)</span>)</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Kruskal算法刚需并查集去判断能否纳入找到的最小边，而Prim算法可以选择用数组去记录顶点是否已被纳入。
+其次Kruskal算法需要对边进行排序，可以选择min-heap。</p>
+</div>
 
 
 
