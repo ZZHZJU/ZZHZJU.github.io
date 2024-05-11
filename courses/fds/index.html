@@ -1456,16 +1456,16 @@
 <li>FirstChild-NextSibling表示法</li>
 <li>记录一个子节点和它的兄弟节点</li>
 <li>因为儿子的顺序不固定，所以表示方式不唯一</li>
-<li>将FirstChild当作左儿子，NextSibling当作右儿子可以将任意一棵树表示成二叉树。</li>
+<li>将FirstChild当作左儿子，NextSibling当作右儿子可以将任意一棵树表示成二叉树。
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>struct TreeNode
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>{
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>  ElementType Element;
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>  PtrToNode FirstChild;
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>  PtrtoNode NextSibling;
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>};
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>typedef struct TreeNode * PtrToNode
+</span></code></pre></div></li>
 </ul>
-<pre><code>struct TreeNode
-{
-  ElementType Element;
-  PtrToNode FirstChild;
-  PtrtoNode NextSibling;
-};
-typedef struct TreeNode * PtrToNode
-</code></pre>
 <h3 id="binary-tree">Binary Tree</h3>
 <ul>
 <li>每个节点最多有两个子节点的树</li>
@@ -1484,46 +1484,44 @@ typedef struct TreeNode * PtrToNode
 <li>左<span class="arithmatex">\(\rightarrow\)</span>根<span class="arithmatex">\(\rightarrow\)</span>右</li>
 <li>后序遍历(postorder)</li>
 <li>左<span class="arithmatex">\(\rightarrow\)</span>右<span class="arithmatex">\(\rightarrow\)</span>根</li>
-<li>递归地进行，如果要改成迭代的话需要自己定义栈去模拟系统栈。</li>
+<li>递归地进行，如果要改成迭代的话需要自己定义栈去模拟系统栈。
+<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>void iter_inorder(PtrToNode root)
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>{
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>  stack s=create_stack();
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>  PtrToNode p;
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>  p=root;
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>  while(1)
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>  {
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>    while(p)
+</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>    {
+</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>      push(s,p);
+</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>      p=p-&gt;left;
+</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a>    }
+</span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a>    p=pop(s);
+</span><span id="__span-1-14"><a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a>    if(p)
+</span><span id="__span-1-15"><a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a>    {
+</span><span id="__span-1-16"><a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a>      visit(P);
+</span><span id="__span-1-17"><a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a>      p=p-&gt;right;
+</span><span id="__span-1-18"><a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a>    }
+</span><span id="__span-1-19"><a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a>    else
+</span><span id="__span-1-20"><a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a>      break;
+</span><span id="__span-1-21"><a id="__codelineno-1-21" name="__codelineno-1-21" href="#__codelineno-1-21"></a>  }
+</span><span id="__span-1-22"><a id="__codelineno-1-22" name="__codelineno-1-22" href="#__codelineno-1-22"></a>}
+</span></code></pre></div></li>
+<li>层序遍历：需要queue去装已访问节点,记得判断入队的节点非空
+<div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>void levelorder(PtrToNode root)
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>{
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>  enqueue(root);
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>  while(q is not empty)
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>  {
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>    visit(T=dequeue(q));
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>    for(each child C of T)
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>      enqueue(C);
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>  }
+</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a>}
+</span></code></pre></div>
+<font color = blue>我期中考试的编程题是这个</font></li>
 </ul>
-<pre><code>void iter_inorder(PtrToNode root)
-{
-  stack s=create_stack();
-  PtrToNode p;
-  p=root;
-  while(1)
-  {
-    while(p)
-    {
-      push(s,p);
-      p=p-&gt;left;
-    }
-    p=pop(s);
-    if(p)
-    {
-      visit(P);
-      p=p-&gt;right;
-    }
-    else
-      break;
-  }
-}
-</code></pre>
-<ul>
-<li>层序遍历：需要queue去装已访问节点,记得判断入队的节点非空</li>
-</ul>
-<pre><code>void levelorder(PtrToNode root)
-{
-  enqueue(root);
-  while(q is not empty)
-  {
-    visit(T=dequeue(q));
-    for(each child C of T)
-      enqueue(C);
-  }
-}
-</code></pre>
-<p><font color = blue>我期中考试的编程题是这个</font></p>
 <h3 id="_6">线索二叉树</h3>
 <p>教材上没有，但cyll书上有
 目的是加速遍历
@@ -1612,28 +1610,28 @@ typedef struct TreeNode * PtrToNode
 <p>时间复杂度：顺序查找： <span class="arithmatex">\(O（|V|^2+|E|）\)</span>
 使用堆优化： <span class="arithmatex">\(O(ElogV)\)</span></p>
 <h3 id="4-spfa">4.有负边的最短路 SPFA算法</h3>
-<p>这个算法时间复杂度相当大<span class="arithmatex">\(O(VE)\)</span></p>
-<pre><code>void WeightNegative(Table T)
-{
-  Queue Q=create_queue();
-  Vertex V,W;
-  Enqueue(Q,s);
-  while(!IsEmpty(Q))
-  {
-    V=Dequeue(Q);
-    for(each W adjacent to V)
-    {
-      if(T[V].dist+w&lt;T[W].dist)
-      {
-        T[W].dist=T[V].dist+w;
-        T[W].path=V;
-        if(W is not already in Q)
-          Enqueue(Q,W);
-      }
-    }
-  }
-}
-</code></pre>
+<p>这个算法时间复杂度相当大<span class="arithmatex">\(O(VE)\)</span>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>void WeightNegative(Table T)
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>{
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>  Queue Q=create_queue();
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>  Vertex V,W;
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>  Enqueue(Q,s);
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>  while(!IsEmpty(Q))
+</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>  {
+</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a>    V=Dequeue(Q);
+</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a>    for(each W adjacent to V)
+</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a>    {
+</span><span id="__span-3-11"><a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a>      if(T[V].dist+w&lt;T[W].dist)
+</span><span id="__span-3-12"><a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a>      {
+</span><span id="__span-3-13"><a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a>        T[W].dist=T[V].dist+w;
+</span><span id="__span-3-14"><a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a>        T[W].path=V;
+</span><span id="__span-3-15"><a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a>        if(W is not already in Q)
+</span><span id="__span-3-16"><a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a>          Enqueue(Q,W);
+</span><span id="__span-3-17"><a id="__codelineno-3-17" name="__codelineno-3-17" href="#__codelineno-3-17"></a>      }
+</span><span id="__span-3-18"><a id="__codelineno-3-18" name="__codelineno-3-18" href="#__codelineno-3-18"></a>    }
+</span><span id="__span-3-19"><a id="__codelineno-3-19" name="__codelineno-3-19" href="#__codelineno-3-19"></a>  }
+</span><span id="__span-3-20"><a id="__codelineno-3-20" name="__codelineno-3-20" href="#__codelineno-3-20"></a>}
+</span></code></pre></div></p>
 <h3 id="5aoe-active-on-edge">5.AOE网络 (Active on Edge)</h3>
 <ul>
 <li>规划活动进行的顺序</li>
@@ -1675,28 +1673,28 @@ typedef struct TreeNode * PtrToNode
 </div>
 <h3 id="8-dfs">8. DFS</h3>
 <p>递归地进行，这个程序不要求掌握迭代版本的写法，实际上要写成迭代还挺麻烦的。
-基本思路：直接上伪代码吧，感觉不太好表述</p>
-<pre><code>void DFS(Vertex V)
-{
-  visited[V] = true;
-  for(each W adjacent to V)
-  {
-    if(!visited[V])
-      DFS(W);
-  }
-}
-</code></pre>
-<p>应用：寻找无向图中的联通分量</p>
-<pre><code>void ListComponents(Graph G)
-{
-  for(each V in G)
-    if(!visited[V])
-    {
-      DFS(V);
-      printf(&quot;\n&quot;);
-    }
-}
-</code></pre>
+基本思路：直接上伪代码吧，感觉不太好表述
+<div class="language-text highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>void DFS(Vertex V)
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>{
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>  visited[V] = true;
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>  for(each W adjacent to V)
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>  {
+</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>    if(!visited[V])
+</span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a>      DFS(W);
+</span><span id="__span-4-8"><a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a>  }
+</span><span id="__span-4-9"><a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a>}
+</span></code></pre></div>
+应用：寻找无向图中的联通分量
+<div class="language-text highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>void ListComponents(Graph G)
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>{
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>  for(each V in G)
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>    if(!visited[V])
+</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>    {
+</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>      DFS(V);
+</span><span id="__span-5-7"><a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a>      printf(&quot;\n&quot;);
+</span><span id="__span-5-8"><a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a>    }
+</span><span id="__span-5-9"><a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a>}
+</span></code></pre></div></p>
 <h3 id="9-biconnectivity">9. Biconnectivity</h3>
 <p>如果去掉一个点，剩下的图不再是联通的，则称这个点为 articulation point
 求双向联通分量有两个常见算法，课上讲的应该是第一个</p>
@@ -1775,7 +1773,7 @@ typedef struct TreeNode * PtrToNode
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.top", "search.suggest", "search.highlight", "navigation.expand", "search.share"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.top", "search.suggest", "search.highlight", "navigation.expand", "search.share", "content.code.copy", "content.code.annotate"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
       <script src="../../assets/javascripts/bundle.dd8806f2.min.js"></script>
