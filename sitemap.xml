@@ -16,7 +16,22 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://zzhzju.github.io/courses/Caculus/</loc>
+         <lastmod>2024-05-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://zzhzju.github.io/courses/DM/</loc>
+         <lastmod>2024-05-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://zzhzju.github.io/courses/Linear%20Algebra/</loc>
+         <lastmod>2024-05-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://zzhzju.github.io/courses/Physics/</loc>
          <lastmod>2024-05-16</lastmod>
          <changefreq>daily</changefreq>
     </url>

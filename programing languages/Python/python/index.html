@@ -249,7 +249,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../courses/DM/" class="md-tabs__link">
+        <a href="../../../courses/Caculus/" class="md-tabs__link">
           
   
   Courses
@@ -469,11 +469,74 @@
   
   
     <li class="md-nav__item">
+      <a href="../../../courses/Caculus/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    微积分(甲)一 二
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../../courses/DM/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
     Discete Mathematics
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../courses/Linear%20Algebra/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    线性代数(甲)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../courses/Physics/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    大学物理(乙)
   </span>
   
 
@@ -848,6 +911,15 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      需要注意的几个常用函数
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -1195,6 +1267,15 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      需要注意的几个常用函数
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -1318,6 +1399,29 @@ set.remove(...) 没有会抛出异常
 set.discard(...) 没有会忽略</p>
 <h4 id="_11">字典</h4>
 <p>存储键值对</p>
+<h3 id="_12">需要注意的几个常用函数</h3>
+<ol>
+<li>sorted():
+    进行排序操作，返回一个排好序的对象
+    <div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nb">sorted</span><span class="p">(</span><span class="n">iterable</span><span class="p">,</span><span class="n">key</span><span class="p">,</span><span class="n">reverse</span><span class="p">)</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="c1"># iterable 是可迭代对象</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="c1"># key 是用来进行比较的函数</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="c1"># reverse 排序规则 True 升序 False 降序</span>
+</span></code></pre></div></li>
+<li>map():
+   指定可迭代对象作映射，返回新的可迭代对象
+   <code>python
+   map(function,iterables)
+   # function是一个函数
+   # 返回值是由function数值组成的可迭代对象</code></li>
+<li>zip():
+   将对象中的元组打包成一个元组
+   如果各迭代对象长度不一，则返回序列长度与最短的相同
+   可用于交换键值对</li>
+<li>eval()和exec():
+   eval()是计算表达式，返回表达式的值
+   exec()</li>
+</ol>
 
 
 

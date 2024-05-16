@@ -249,7 +249,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../courses/DM/" class="md-tabs__link">
+        <a href="../../../courses/Caculus/" class="md-tabs__link">
           
   
   Courses
@@ -469,11 +469,74 @@
   
   
     <li class="md-nav__item">
+      <a href="../../../courses/Caculus/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    微积分(甲)一 二
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../../courses/DM/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
     Discete Mathematics
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../courses/Linear%20Algebra/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    线性代数(甲)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../courses/Physics/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    大学物理(乙)
   </span>
   
 
@@ -652,6 +715,17 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    oop
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -661,6 +735,61 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      类和对象
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      封装
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      继承
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      多态
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -876,6 +1005,50 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      类和对象
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      封装
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      继承
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      多态
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -895,13 +1068,37 @@
 <p>Object-Oriented Programming 面向对象的程序设计，比起 C++ 和 Java 等其他语言，Python 中oop 的理解和使用都很简单。</p>
 </div>
 <p>事实上Python中oop大多数时候都可以简化成这个表达式<font color = purple>object.attribute</font>(bushi)</p>
-<p>类(class)是定义属性(变量、数据)和行为(方法)的模板，Python中的所有类型都是类。
-定义类
+<h2 id="_1">类和对象</h2>
+<p>类(class)是定义属性(变量、数据)和行为(方法)的模板，Python中的所有类型都是类。</p>
+<p>定义类
 <div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>class ClassName:
 </span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    initializer
 </span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    methods
 </span></code></pre></div>
-方法(method)是类中的函数。</p>
+对象(object)也称实例。</p>
+<p>方法(method)是类中的函数。</p>
+<p>可以通过对象访问的变量也称为属性</p>
+<p>访问属性的方式：
+* 通过实例直接访问(不推荐)
+* 通过相应方法访问</p>
+<h2 id="_2">封装</h2>
+<p>封装：将客观事物抽象封装成对象
+Python允许声明属于类本身的变量，即类变量，也称静态变量。
+方法：
+1. 实例方法
+2. 类方法(@classmethod)参数常为cls
+3. 静态方法(@staticmethod)
+Python类的成员没有访问控制限制</p>
+<p>但有一些约定：
+1. <code>_xxx</code> 是受保护的成员。
+2. <code>__xxx__</code> 是系统定义的特殊成员。
+3. <code>__xxx</code> 是私有变量，只有类内自己能访问，不能使用实例访问。</p>
+<h2 id="_3">继承</h2>
+<p>创建子类时父类必须包含在这个文件前
+在()里指定父类的名称
+supper是一个特殊的函数，帮助Python将父类和子类关联起来</p>
+<h2 id="_4">多态</h2>
+<p>子类的对象可以传递给需要父类类型的参数，一个方法可以沿着继承链的几个类，运行时由Python决定调用哪个方法，这也叫动态绑定。</p>
 
 
 
