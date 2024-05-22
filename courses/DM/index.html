@@ -217,7 +217,7 @@
   
     
   
-  简介
+  Introduction
 
       </a>
     </li>
@@ -324,7 +324,7 @@
         
   
   <span class="md-ellipsis">
-    简介
+    Introduction
   </span>
   
 
@@ -571,6 +571,99 @@
       历年卷：
     </span>
   </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      知识点：
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="知识点：">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ch10" class="md-nav__link">
+    <span class="md-ellipsis">
+      CH10
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="CH10">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#basic-definitions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Basic Definitions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#special-simple-graph" class="md-nav__link">
+    <span class="md-ellipsis">
+      Special Simple Graph
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#representing-graphs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Representing Graphs
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#isomorphism-of-graph" class="md-nav__link">
+    <span class="md-ellipsis">
+      Isomorphism of Graph
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#connectivity" class="md-nav__link">
+    <span class="md-ellipsis">
+      Connectivity
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#euler-pathscircuits" class="md-nav__link">
+    <span class="md-ellipsis">
+      Euler Paths/Circuits
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hamilton-pathscircuits" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hamilton Paths/Circuits
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1047,6 +1140,99 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      知识点：
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="知识点：">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ch10" class="md-nav__link">
+    <span class="md-ellipsis">
+      CH10
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="CH10">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#basic-definitions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Basic Definitions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#special-simple-graph" class="md-nav__link">
+    <span class="md-ellipsis">
+      Special Simple Graph
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#representing-graphs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Representing Graphs
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#isomorphism-of-graph" class="md-nav__link">
+    <span class="md-ellipsis">
+      Isomorphism of Graph
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#connectivity" class="md-nav__link">
+    <span class="md-ellipsis">
+      Connectivity
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#euler-pathscircuits" class="md-nav__link">
+    <span class="md-ellipsis">
+      Euler Paths/Circuits
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hamilton-pathscircuits" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hamilton Paths/Circuits
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1085,6 +1271,101 @@
 </ol>
 <h2 id="_4">历年卷：</h2>
 <p>离散的历年卷可以说是几乎没有</p>
+<h2 id="_5">知识点：</h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>只有Graph 和 Tree 的内容，各种算法详见<a href="https://kagunanana.site/courses/fds/">fds</a>图论章节</p>
+</div>
+<h3 id="ch10">CH10</h3>
+<h4 id="basic-definitions"><font color = blue>Basic Definitions</font></h4>
+<ol>
+<li>Simple graph:同一对顶点之间只有一条边</li>
+<li>Multigraph:同一对顶点之间可能有多条边</li>
+<li>Pseudograph:可能存在自环、同一对顶点之间可能有多条边</li>
+<li>path:即{<span class="arithmatex">\(v_0,v_1\)</span>},<span class="arithmatex">\(\dots\)</span>,{<span class="arithmatex">\(v_{n-1},v_n\)</span>}长度为n的路径</li>
+<li>circuit：path首尾是同一个点</li>
+<li>simple path：path里不多次包含同一条边</li>
+<li>Degree:</li>
+<li>Undirected Graph<ul>
+<li>deg(v):度</li>
+<li>deg(v)=0 is called isolated,while deg(v)=1 is called pendant</li>
+<li>自环对度的贡献为2</li>
+<li>度之和为<span class="arithmatex">\(2N_e\)</span></li>
+<li>无向图中度为奇数的点有偶数个</li>
+</ul>
+</li>
+<li>Directed Graph<ul>
+<li><span class="arithmatex">\(deg^-(v)\)</span>:入度</li>
+<li><span class="arithmatex">\(deg^+(v)\)</span>:出度</li>
+<li>所有顶点的入度之和等于出度之和等于边数</li>
+</ul>
+</li>
+</ol>
+<h4 id="special-simple-graph"><font color = blue>Special Simple Graph</font></h4>
+<ul>
+<li>Complete Graph(完全图)<span class="arithmatex">\(K_n\)</span>：任意两个定点之间都有边，所以共有<span class="arithmatex">\({n(n-1)/2}\)</span></li>
+<li>Cycles(环图)<span class="arithmatex">\(C_n\)</span>:顶点之间依次相连形成简单环</li>
+<li>Wheels(轮图)<span class="arithmatex">\(W_n(n&gt;2)\)</span>:由环图增加一个点构造</li>
+<li>n-Cubes <span class="arithmatex">\(Q_n\)</span></li>
+</ul>
+<hr />
+<ul>
+<li>Bipartite Graph(二部图)：节点集可以分为两个不相交的子集，使得每条边都连接两个不同子集的结点。在同一个子集中的节点之间没有边相连</li>
+<li>Complete Bipartite Graph(完全二部图):特化的二部图，两个点集分别有m和n个点，记作<span class="arithmatex">\(K_{m,n}\)</span>，一共有<span class="arithmatex">\(m*n\)</span>条边</li>
+<li>Regular Graph(正则图)</li>
+<li>n-regular:每个结点的度数都为n</li>
+</ul>
+<hr />
+<p><span class="arithmatex">\(G(V,E),H(W,F)\)</span>
+* subgraph:子图，$W\subseteq V,F \subseteq E $
+* proper graph:真子图，<span class="arithmatex">\(W\subseteq V,F \subseteq E\)</span>
+* spanning subgraph:生成子图，<span class="arithmatex">\(W=V,F \subseteq E\)</span></p>
+<h4 id="representing-graphs"><font color = blue>Representing Graphs</font></h4>
+<ul>
+<li><strong>Adjacent Matrix</strong>
+对行求和</li>
+<li>无向图：为<span class="arithmatex">\(deg(v)-loops(v)\)</span></li>
+<li>有向图：为<span class="arithmatex">\(deg^+(v)\)</span>，即出度
+对列求和</li>
+<li>对无向图,为<span class="arithmatex">\(deg(v)-loops(v)\)</span></li>
+<li>对有向图,为<span class="arithmatex">\(deg^-(v)\)</span>，即出度</li>
+<li><font color = red>记邻接矩阵为A，<span class="arithmatex">\(v_
+  i\)</span> 到 <span class="arithmatex">\(v_j\)</span>的长度为r的path的个数为：<span class="arithmatex">\(A^r[i][j]\)</span> </font></li>
+<li><strong>Incidence Matrix(关联矩阵)</strong>
+对行求和
+对列求和 </li>
+</ul>
+<h4 id="isomorphism-of-graph"><font color = blue>Isomorphism of Graph</font></h4>
+<p>Definition:给定两个simple graph,若存在一个一一映射可以从<span class="arithmatex">\(G_1\)</span>变到<span class="arithmatex">\(G_2\)</span>，同时保持邻接关系不变。
+要说明两个图同构相当困难，暴力算法<span class="arithmatex">\(O(n!)\)</span>，但说明不同够较为容易</p>
+<h4 id="connectivity"><font color = blue>Connectivity</font></h4>
+<ol>
+<li>无向图：</li>
+<li>连通：任意一对定点之间都有simple path相连</li>
+<li>connected components(联通分量)：极大连通子图</li>
+<li>cut vertex(割点)：从连通图里删除割点就产生不连通的子图</li>
+<li>vertex cut <span class="arithmatex">\(V'\)</span>:<span class="arithmatex">\(V - V'\)</span> is disconnected </li>
+<li>vertex connectivity <span class="arithmatex">\(k(G)\)</span>:the minimum number in a vertex cut.<span class="arithmatex">\(k(G)\)</span> of a complete graph is denoted as <span class="arithmatex">\(V_n-1\)</span></li>
+<li>
+<p>cut edge/bridge(割边，桥)：从连通图里删除割边，就产生不连通子图</p>
+</li>
+<li>
+<p>有向图：  </p>
+</li>
+<li>强连通：任意一对顶点<span class="arithmatex">\((a,b)\)</span> , <span class="arithmatex">\(a\rightarrow b\)</span> 和 <span class="arithmatex">\(b\rightarrow a\)</span>都有 simple path</li>
+<li>弱连通： 看做无向图，对应无向图连通</li>
+<li>strongly connected componets: 极大强连通子图</li>
+</ol>
+<h4 id="euler-pathscircuits"><font color = blue>Euler Paths/Circuits</font></h4>
+<p>Euler Path:包含每条边的simple path
+Euler Circuit:包含每条边的simple circuit
+<strong>充要条件：</strong></p>
+<h4 id="hamilton-pathscircuits"><font color = blue>Hamilton Paths/Circuits</font></h4>
+<p>Hamilton Path:包含每个结点（仅一次）的 simple path
+Hamilton Circuit:除了起点和终点包含两次，其他每个结点包含一次的simple circuit
+<strong>充分条件</strong>
+<strong>必要条件</strong>
+<font color = purple>没有充要条件</font></p>
 
 
 
