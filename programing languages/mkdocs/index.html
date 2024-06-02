@@ -949,27 +949,6 @@
 
               
             
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../front%20end%20language/log%20in%20and%20authentication/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Log in and Authentication
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
           </ul>
         </nav>
       
@@ -1065,13 +1044,41 @@
 <h1 id="mkdocs">Mkdocs</h1>
 <div class="admonition abstract">
 <p class="admonition-title">Abstract</p>
-<p>本文为mkdocs教程，即建立个人网站的教程，本网站亦由mkdoc生成的。</p>
+<p>本文为mkdocs教程，即建立个人网站的教程，初学时并不需要懂前端语言，本网站亦由mkdoc生成的。</p>
 </div>
 <h2 id="1">1. 概述</h2>
 <p>由于GitHub和Markdown格式的普及，很多时候我们可以用markdown来简便地写出文档，并且通过Mkdocs 和 GitHub Pages等工具快速地进行文档的部署。</p>
 <h2 id="2-mkdocs">2. 安装mkdocs</h2>
+<p>需要已下载Python和pip
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>pip<span class="w"> </span>install<span class="w"> </span>mkdocs
+</span></code></pre></div>
+各种插件也均是通过pip下载</p>
 <h2 id="3-mkdocs">3. 配置mkdocs</h2>
+<p>推荐 material 主题
+配置yaml文件，不太需要完全懂yaml语法，只是要知道yaml和Python一样是靠缩进来区分代码块
+详见 <a href="https://wdk-docs.github.io/mkdocs-docs/">MkDocs 文档</a> <del>里面什么都有</del></p>
 <h2 id="4-site">4. 部署site</h2>
+<p>选择一个文件夹
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>mkdocs<span class="w"> </span>new<span class="w"> </span>.
+</span></code></pre></div>
+在当前目录初始化一个新的 MkDocs 项目，里面结构为
+<div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>- mkdocs.yml
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>- index.md
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>- docs/
+</span></code></pre></div>
+在docs文件夹里创建markdown文件就可以开始创作了</p>
+<hr />
+<p><div class="language-bash highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>mkdocs<span class="w"> </span>build
+</span></code></pre></div>
+生成site/ 接下来只需要将该文件夹里的内容上传即可。注意是上传文件夹里的内容，而不是直接上传文件夹。如果要绑定自己的域名，需要添加CNAME文件(类型是任意文本，先创建.txt再把后缀名删除)</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>DNF 解析更新需要一定时间，运气不好可能需要等待近10min，请耐心等待。</p>
+</div>
+<hr />
+<p><div class="language-bash highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>mkdocs<span class="w"> </span>serve
+</span></code></pre></div>
+本地预览网站效果，建议配置yaml的时候就跑起来，方便检查是否有语法错误以及插件是否正常生效，若有语法错误网站是解析不出来的。</p>
 
 
 
