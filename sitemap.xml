@@ -16,46 +16,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://zzhzju.github.io/Index/programing%20languages/git/</loc>
-         <lastmod>2024-07-02</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://zzhzju.github.io/Index/programing%20languages/mkdocs/</loc>
-         <lastmod>2024-07-02</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://zzhzju.github.io/Index/programing%20languages/Python/oop/</loc>
-         <lastmod>2024-07-02</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://zzhzju.github.io/Index/programing%20languages/Python/python/</loc>
-         <lastmod>2024-07-02</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://zzhzju.github.io/Index/programing%20languages/front%20end%20language/Internet%20basic%20knowledge/</loc>
-         <lastmod>2024-07-02</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://zzhzju.github.io/Index/programing%20languages/front%20end%20language/css/</loc>
-         <lastmod>2024-07-02</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://zzhzju.github.io/Index/programing%20languages/front%20end%20language/html/</loc>
-         <lastmod>2024-07-02</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://zzhzju.github.io/Index/programing%20languages/front%20end%20language/javascript/</loc>
-         <lastmod>2024-07-02</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://zzhzju.github.io/courses/Caculus/</loc>
          <lastmod>2024-07-02</lastmod>
          <changefreq>daily</changefreq>
@@ -76,12 +36,47 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://zzhzju.github.io/courses/a/</loc>
+         <loc>https://zzhzju.github.io/courses/fds/</loc>
          <lastmod>2024-07-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://zzhzju.github.io/courses/fds/</loc>
+         <loc>https://zzhzju.github.io/programing%20languages/git/</loc>
+         <lastmod>2024-07-02</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://zzhzju.github.io/programing%20languages/mkdocs/</loc>
+         <lastmod>2024-07-02</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://zzhzju.github.io/programing%20languages/Python/oop/</loc>
+         <lastmod>2024-07-02</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://zzhzju.github.io/programing%20languages/Python/python/</loc>
+         <lastmod>2024-07-02</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://zzhzju.github.io/programing%20languages/front%20end%20language/Internet%20basic%20knowledge/</loc>
+         <lastmod>2024-07-02</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://zzhzju.github.io/programing%20languages/front%20end%20language/css/</loc>
+         <lastmod>2024-07-02</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://zzhzju.github.io/programing%20languages/front%20end%20language/html/</loc>
+         <lastmod>2024-07-02</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://zzhzju.github.io/programing%20languages/front%20end%20language/javascript/</loc>
          <lastmod>2024-07-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
