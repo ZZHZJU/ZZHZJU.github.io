@@ -10,28 +10,28 @@
         <meta name="author" content="Nana">
       
       
-        <link rel="canonical" href="https://zzhzju.github.io/programing%20languages/front%20end%20language/Internet%20basic%20knowledge/">
+        <link rel="canonical" href="https://zzhzju.github.io/programing%20languages/JS/">
       
       
-        <link rel="prev" href="../../Python/python/">
+        <link rel="prev" href="../../courses/fds/">
       
       
-        <link rel="next" href="../css/">
+        <link rel="next" href="../git/">
       
       
-      <link rel="icon" href="../../../assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.19">
     
     
       
-        <title>网络基础 - Nana's Notebook</title>
+        <title>JavaScript 原型链污染漏洞的博文 - Nana's Notebook</title>
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.66ac8b77.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.66ac8b77.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -50,7 +50,7 @@
       
     
     
-    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#_1" class="md-skip">
+        <a href="#javascript" class="md-skip">
           Skip to content
         </a>
       
@@ -90,7 +90,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../.." title="Nana&#39;s Notebook" class="md-header__button md-logo" aria-label="Nana's Notebook" data-md-component="logo">
+    <a href="../.." title="Nana&#39;s Notebook" class="md-header__button md-logo" aria-label="Nana's Notebook" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -110,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              网络基础
+              JavaScript 原型链污染漏洞的博文
             
           </span>
         </div>
@@ -212,7 +212,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../.." class="md-tabs__link">
+      <a href="../.." class="md-tabs__link">
         
   
     
@@ -231,7 +231,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../Index/archive/" class="md-tabs__link">
+        <a href="../../Index/archive/" class="md-tabs__link">
           
   
   Index
@@ -249,7 +249,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../courses/Caculus/" class="md-tabs__link">
+        <a href="../../courses/Caculus/" class="md-tabs__link">
           
   
   Courses
@@ -269,7 +269,7 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="../../git/" class="md-tabs__link">
+        <a href="./" class="md-tabs__link">
           
   
   Programing languages
@@ -302,7 +302,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../.." title="Nana&#39;s Notebook" class="md-nav__button md-logo" aria-label="Nana's Notebook" data-md-component="logo">
+    <a href="../.." title="Nana&#39;s Notebook" class="md-nav__button md-logo" aria-label="Nana's Notebook" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -320,7 +320,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../.." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -380,7 +380,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Index/archive/" class="md-nav__link">
+      <a href="../../Index/archive/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -401,7 +401,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Index/friend_link/" class="md-nav__link">
+      <a href="../../Index/friend_link/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -469,7 +469,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../courses/Caculus/" class="md-nav__link">
+      <a href="../../courses/Caculus/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -490,7 +490,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../courses/DM/" class="md-nav__link">
+      <a href="../../courses/DM/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -511,7 +511,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../courses/Linear%20Algebra/" class="md-nav__link">
+      <a href="../../courses/Linear%20Algebra/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -532,7 +532,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../courses/Physics/" class="md-nav__link">
+      <a href="../../courses/Physics/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -553,7 +553,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../courses/fds/" class="md-nav__link">
+      <a href="../../courses/fds/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -621,178 +621,6 @@
                 
   
   
-  
-  
-    <li class="md-nav__item">
-      <a href="../../git/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Git
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../mkdocs/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Mkdocs
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-    
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_3" >
-        
-          
-          <label class="md-nav__link" for="__nav_4_3" id="__nav_4_3_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    Python
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4_3">
-            <span class="md-nav__icon md-icon"></span>
-            Python
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Python/oop/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    oop
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Python/python/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Python
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-    
-  
-  
-  
-    
-    
-    
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_4" checked>
-        
-          
-          <label class="md-nav__link" for="__nav_4_4" id="__nav_4_4_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    Front end language
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_4_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_4_4">
-            <span class="md-nav__icon md-icon"></span>
-            Front end language
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
     
   
   
@@ -809,7 +637,7 @@
           
   
   <span class="md-ellipsis">
-    网络基础
+    JavaScript 原型链污染漏洞的博文
   </span>
   
 
@@ -820,7 +648,7 @@
         
   
   <span class="md-ellipsis">
-    网络基础
+    JavaScript 原型链污染漏洞的博文
   </span>
   
 
@@ -842,9 +670,45 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      引言
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
-      一些基础概念
+      概述
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      原理
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      影响
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      防护措施
     </span>
   </a>
   
@@ -866,11 +730,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../css/" class="md-nav__link">
+      <a href="../git/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    CSS
+    Git
   </span>
   
 
@@ -887,44 +751,15 @@
   
   
     <li class="md-nav__item">
-      <a href="../html/" class="md-nav__link">
+      <a href="../mkdocs/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    HTML
+    搭建博客的收获与建议
   </span>
   
 
       </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../javascript/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    JavaScript
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -964,9 +799,45 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      引言
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
-      一些基础概念
+      概述
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      原理
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      影响
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      防护措施
     </span>
   </a>
   
@@ -987,25 +858,45 @@
                   
 
 
-<h1 id="_1"><center>网络基础</center></h1>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>一些互联网的基本知识简介（<del>真的很简</del>，想要了解具体内容最好自己去google</p>
-</div>
-<h2 id="_2">一些基础概念</h2>
+<h1 id="javascript">JavaScript 原型链污染漏洞的博文</h1>
+<h2 id="_1">引言</h2>
+<p>JavaScript 原型链（Prototype Chain）是实现对象继承的一种重要机制。然而，这种机制也可能带来一些安全隐患，其中最著名的就是原型链污染（Prototype Pollution）漏洞。</p>
+<h2 id="_2">概述</h2>
+<p>在 JavaScript 中，每个对象都有一个内部链接到另一个对象，这个对象被称为其原型（prototype）。当我们访问对象的属性时，如果该属性不存在于对象自身，则 JavaScript 引擎会沿着原型链向上查找，直到找到该属性或到达原型链的顶端 'Object.prototype'。
+<div class="language-java highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">let</span><span class="w"> </span><span class="n">obj</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{};</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="n">console</span><span class="p">.</span><span class="na">log</span><span class="p">(</span><span class="n">obj</span><span class="p">.</span><span class="na">toString</span><span class="p">);</span><span class="w"> </span><span class="c1">// [Function: toString]</span>
+</span></code></pre></div>
+虽然 obj 对象本身没有 toString 方法，但它的原型链上有。</p>
+<h2 id="_3">原理</h2>
+<p>原型链污染漏洞的核心在于攻击者能够通过不安全的输入操作，修改对象的原型，从而影响到所有通过该原型创建的对象。这通常发生在深度合并（deep merge）或对象克隆等操作中。</p>
+<p>举个例子：
+<div class="language-java highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="n">let</span><span class="w"> </span><span class="n">maliciousPayload</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">JSON</span><span class="p">.</span><span class="na">parse</span><span class="p">(</span><span class="err">&#39;</span><span class="p">{</span><span class="s">&quot;__proto__&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="s">&quot;polluted&quot;</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;yes&quot;</span><span class="p">}}</span><span class="err">&#39;</span><span class="p">);</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="n">let</span><span class="w"> </span><span class="n">target</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{};</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="n">Object</span><span class="p">.</span><span class="na">assign</span><span class="p">(</span><span class="n">target</span><span class="p">,</span><span class="w"> </span><span class="n">maliciousPayload</span><span class="p">);</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="n">console</span><span class="p">.</span><span class="na">log</span><span class="p">({}.</span><span class="na">polluted</span><span class="p">);</span><span class="w"> </span><span class="c1">// yes</span>
+</span></code></pre></div>
+在这个示例中，maliciousPayload 对象包含一个特殊的属性 <strong>proto</strong>，用于修改目标对象 target 的原型链。通过 Object.assign 操作，target 对象的原型被污染，导致所有新创建的对象都受影响。</p>
+<h2 id="_4">影响</h2>
 <ol>
-<li>[<code>OSI</code>]  (Open System Interconnect)，即开放式系统互连，该体系标准定义了网络互连的七层框架。</li>
-<li><code>TCP/IP</code>:因特网协议套组是一系列运用在计算机网络上的协议,其中最基础的协议是TCP 和 IP</li>
-<li>IP地址：互联网上每一个网络和每一台电脑的逻辑地址，分为IPV4（32位）和IPV6（128位）</li>
-<li><code>URL</code>:网络链接，即根据统一资源定位符（URL，uniform resource location）</li>
-<li><code>API</code>:应用程序编程接口(Application Programming Interface)，它定义多个软件之间的交互，以及可以进行调用(call)的机制或请求(request)的种类，如何进行调用或者发出请求，应用的数据格式，应遵循的管理等。</li>
-<li><code>DNS</code>:域名系统，将域名和IP地址进行对应</li>
-<li><code>FTP</code>：文件传输协议，三次握手确认连接有效</li>
-<li><code>Telnet</code>：远程终端协议，用于登录远程服务，在本地使用命令操控服务器</li>
-<li><code>HTTP</code>：超文本传输协议</li>
-<li>路由：从一个设备到另一个。一般，一个路由器会告诉你到指定设备的最优路径。</li>
-<li><code>Cookie</code>：Cookie 是浏览器的一种本地储存方式。（<del>不是曲奇</del></li>
+<li>数据完整性：原型链污染可能导致对象属性意外改变，破坏应用的正常功能。</li>
+<li>安全风险：攻击者可以利用原型链污染注入恶意代码，进一步执行跨站脚本攻击（XSS）或远程代码执行（RCE）。</li>
+<li>系统稳定性：原型链污染可能引发难以调试的错误，影响系统的稳定性和可维护性。</li>
 </ol>
+<h2 id="_5">防护措施</h2>
+<ol>
+<li>避免直接使用不可信数据：在处理用户输入的数据时，应避免直接将其用于修改对象的原型。例如，深度合并操作时，应过滤掉 <strong>proto</strong> 属性。</li>
+<li>使用安全的对象合并库：选择经过审查和测试的第三方库进行对象合并操作，例如 lodash 的 merge 函数，它已经处理了原型链污染问题。</li>
+<li>启用严格模式：在严格模式下，某些情况下对原型链的修改会被禁止，可以一定程度上防止原型链污染。</li>
+</ol>
+<p><div class="language-java highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="s">&quot;use strict&quot;</span><span class="p">;</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="n">let</span><span class="w"> </span><span class="n">maliciousPayload</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">JSON</span><span class="p">.</span><span class="na">parse</span><span class="p">(</span><span class="err">&#39;</span><span class="p">{</span><span class="s">&quot;__proto__&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="s">&quot;polluted&quot;</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;yes&quot;</span><span class="p">}}</span><span class="err">&#39;</span><span class="p">);</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="n">let</span><span class="w"> </span><span class="n">target</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{};</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="n">Object</span><span class="p">.</span><span class="na">assign</span><span class="p">(</span><span class="n">target</span><span class="p">,</span><span class="w"> </span><span class="n">maliciousPayload</span><span class="p">);</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="n">console</span><span class="p">.</span><span class="na">log</span><span class="p">({}.</span><span class="na">polluted</span><span class="p">);</span><span class="w"> </span><span class="c1">// undefined</span>
+</span></code></pre></div>
+4. 定期审计代码：对代码进行安全审计，及时发现并修复潜在的安全漏洞。</p>
 
 
 
@@ -1064,12 +955,12 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.top", "search.suggest", "search.highlight", "navigation.expand", "search.share", "content.code.copy", "content.code.annotate", "content.tabs.link"], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.top", "search.suggest", "search.highlight", "navigation.expand", "search.share", "content.code.copy", "content.code.annotate", "content.tabs.link"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.dd8806f2.min.js"></script>
+      <script src="../../assets/javascripts/bundle.dd8806f2.min.js"></script>
       
-        <script src="../../../javascripts/mathjax.js"></script>
+        <script src="../../javascripts/mathjax.js"></script>
       
         <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
       
