@@ -2,57 +2,62 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://zzhzju.github.io/</loc>
-         <lastmod>2024-07-19</lastmod>
+         <lastmod>2024-07-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://zzhzju.github.io/Index/archive/</loc>
-         <lastmod>2024-07-19</lastmod>
+         <lastmod>2024-07-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://zzhzju.github.io/Index/friend_link/</loc>
-         <lastmod>2024-07-19</lastmod>
+         <lastmod>2024-07-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://zzhzju.github.io/courses/Caculus/</loc>
-         <lastmod>2024-07-19</lastmod>
+         <lastmod>2024-07-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://zzhzju.github.io/courses/DM/</loc>
-         <lastmod>2024-07-19</lastmod>
+         <lastmod>2024-07-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://zzhzju.github.io/courses/Linear%20Algebra/</loc>
-         <lastmod>2024-07-19</lastmod>
+         <lastmod>2024-07-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://zzhzju.github.io/courses/Physics/</loc>
-         <lastmod>2024-07-19</lastmod>
+         <lastmod>2024-07-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://zzhzju.github.io/courses/fds/</loc>
-         <lastmod>2024-07-19</lastmod>
+         <lastmod>2024-07-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://zzhzju.github.io/programing%20languages/C%2B%2B/</loc>
+         <lastmod>2024-07-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://zzhzju.github.io/programing%20languages/JS/</loc>
-         <lastmod>2024-07-19</lastmod>
+         <lastmod>2024-07-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://zzhzju.github.io/programing%20languages/git/</loc>
-         <lastmod>2024-07-19</lastmod>
+         <lastmod>2024-07-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://zzhzju.github.io/programing%20languages/mkdocs/</loc>
-         <lastmod>2024-07-19</lastmod>
+         <lastmod>2024-07-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
