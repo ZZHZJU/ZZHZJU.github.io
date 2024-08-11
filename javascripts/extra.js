@@ -1,3 +1,4 @@
+// 点击烟花特效
 function clickEffect() {
     let balls = [];
     let longPressed = false;
@@ -132,6 +133,9 @@ function clickEffect() {
     }
   }
   clickEffect();//调用特效函数
+//点击烟花特效
+
+
 
 //雪花
 const fps = 30;

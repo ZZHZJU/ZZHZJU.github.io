@@ -2,62 +2,67 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://zzhzju.github.io/</loc>
-         <lastmod>2024-08-10</lastmod>
+         <lastmod>2024-08-11</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://zzhzju.github.io/Index/archive/</loc>
-         <lastmod>2024-08-10</lastmod>
+         <loc>https://zzhzju.github.io/friend_link/</loc>
+         <lastmod>2024-08-11</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://zzhzju.github.io/Index/friend_link/</loc>
-         <lastmod>2024-08-10</lastmod>
+         <loc>https://zzhzju.github.io/ZJU%20%E8%AF%BE%E7%A8%8B/%E4%B8%93%E4%B8%9A%E5%9F%BA%E7%A1%80%E8%AF%BE/DM/</loc>
+         <lastmod>2024-08-11</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://zzhzju.github.io/courses/%E4%B8%93%E4%B8%9A%E5%9F%BA%E7%A1%80%E8%AF%BE/DM/</loc>
-         <lastmod>2024-08-10</lastmod>
+         <loc>https://zzhzju.github.io/ZJU%20%E8%AF%BE%E7%A8%8B/%E4%B8%93%E4%B8%9A%E5%9F%BA%E7%A1%80%E8%AF%BE/fds/</loc>
+         <lastmod>2024-08-11</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://zzhzju.github.io/courses/%E4%B8%93%E4%B8%9A%E5%9F%BA%E7%A1%80%E8%AF%BE/fds/</loc>
-         <lastmod>2024-08-10</lastmod>
+         <loc>https://zzhzju.github.io/ZJU%20%E8%AF%BE%E7%A8%8B/%E7%9F%AD%E5%AD%A6%E6%9C%9F%E8%AF%BE%E7%A8%8B/CTF101/</loc>
+         <lastmod>2024-08-11</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://zzhzju.github.io/courses/%E7%9F%AD%E5%AD%A6%E6%9C%9F%E8%AF%BE%E7%A8%8B/CTF101/</loc>
-         <lastmod>2024-08-10</lastmod>
+         <loc>https://zzhzju.github.io/ZJU%20%E8%AF%BE%E7%A8%8B/%E9%80%9A%E8%AF%86%E5%BF%85%E4%BF%AE%E8%AF%BE/Caculus/</loc>
+         <lastmod>2024-08-11</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://zzhzju.github.io/courses/%E9%80%9A%E8%AF%86%E5%BF%85%E4%BF%AE%E8%AF%BE/Caculus/</loc>
-         <lastmod>2024-08-10</lastmod>
+         <loc>https://zzhzju.github.io/ZJU%20%E8%AF%BE%E7%A8%8B/%E9%80%9A%E8%AF%86%E5%BF%85%E4%BF%AE%E8%AF%BE/Linear%20Algebra/</loc>
+         <lastmod>2024-08-11</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://zzhzju.github.io/courses/%E9%80%9A%E8%AF%86%E5%BF%85%E4%BF%AE%E8%AF%BE/Linear%20Algebra/</loc>
-         <lastmod>2024-08-10</lastmod>
+         <loc>https://zzhzju.github.io/ZJU%20%E8%AF%BE%E7%A8%8B/%E9%80%9A%E8%AF%86%E5%BF%85%E4%BF%AE%E8%AF%BE/Physics/</loc>
+         <lastmod>2024-08-11</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://zzhzju.github.io/courses/%E9%80%9A%E8%AF%86%E5%BF%85%E4%BF%AE%E8%AF%BE/Physics/</loc>
-         <lastmod>2024-08-10</lastmod>
+         <loc>https://zzhzju.github.io/%E6%8A%80%E6%9C%AF%E7%A7%AF%E7%B4%AF/JS/</loc>
+         <lastmod>2024-08-11</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://zzhzju.github.io/programing%20languages/JS/</loc>
-         <lastmod>2024-08-10</lastmod>
+         <loc>https://zzhzju.github.io/%E6%8A%80%E6%9C%AF%E7%A7%AF%E7%B4%AF/git/</loc>
+         <lastmod>2024-08-11</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://zzhzju.github.io/programing%20languages/git/</loc>
-         <lastmod>2024-08-10</lastmod>
+         <loc>https://zzhzju.github.io/%E6%8A%80%E6%9C%AF%E7%A7%AF%E7%B4%AF/mkdocs/</loc>
+         <lastmod>2024-08-11</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://zzhzju.github.io/programing%20languages/mkdocs/</loc>
-         <lastmod>2024-08-10</lastmod>
+         <loc>https://zzhzju.github.io/%E6%8A%80%E6%9C%AF%E7%A7%AF%E7%B4%AF/note/</loc>
+         <lastmod>2024-08-11</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://zzhzju.github.io/%E6%9D%82%E8%B0%88/%E5%85%B3%E4%BA%8E%E7%BB%A9%E7%82%B9/</loc>
+         <lastmod>2024-08-11</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>

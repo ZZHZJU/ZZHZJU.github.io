@@ -10,13 +10,13 @@
         <meta name="author" content="Nana">
       
       
-        <link rel="canonical" href="https://zzhzju.github.io/programing%20languages/JS/">
+        <link rel="canonical" href="https://zzhzju.github.io/%E6%8A%80%E6%9C%AF%E7%A7%AF%E7%B4%AF/git/">
       
       
-        <link rel="prev" href="../../courses/%E9%80%9A%E8%AF%86%E5%BF%85%E4%BF%AE%E8%AF%BE/Physics/">
+        <link rel="prev" href="../JS/">
       
       
-        <link rel="next" href="../git/">
+        <link rel="next" href="../mkdocs/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -24,7 +24,7 @@
     
     
       
-        <title>JavaScript 原型链污染漏洞 - Nana's Notebook</title>
+        <title>Git - Nana's Notebook</title>
       
     
     
@@ -49,6 +49,8 @@
         <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
     
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
     
     <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
@@ -76,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#javascript" class="md-skip">
+        <a href="#git" class="md-skip">
           Skip to content
         </a>
       
@@ -110,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              JavaScript 原型链污染漏洞
+              Git
             
           </span>
         </div>
@@ -217,7 +219,24 @@
   
     
   
-  Introduction
+  主页
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../friend_link/" class="md-tabs__link">
+        
+  
+    
+  
+  友链
 
       </a>
     </li>
@@ -230,24 +249,6 @@
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../Index/archive/" class="md-tabs__link">
-          
-  
-  Index
-
-        </a>
-      </li>
-    
-  
-
-      
-        
-  
-  
-  
-    
-    
       
   
   
@@ -255,10 +256,10 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../courses/%E4%B8%93%E4%B8%9A%E5%9F%BA%E7%A1%80%E8%AF%BE/DM/" class="md-tabs__link">
+        <a href="../../ZJU%20%E8%AF%BE%E7%A8%8B/%E4%B8%93%E4%B8%9A%E5%9F%BA%E7%A1%80%E8%AF%BE/DM/" class="md-tabs__link">
           
   
-  Courses
+  ZJU 课程
 
         </a>
       </li>
@@ -278,10 +279,28 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="./" class="md-tabs__link">
+        <a href="../JS/" class="md-tabs__link">
           
   
-  Programing languages
+  技术积累
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../%E6%9D%82%E8%B0%88/%E5%85%B3%E4%BA%8E%E7%BB%A9%E7%82%B9/" class="md-tabs__link">
+          
+  
+  杂谈
 
         </a>
       </li>
@@ -333,7 +352,7 @@
         
   
   <span class="md-ellipsis">
-    Introduction
+    主页
   </span>
   
 
@@ -348,69 +367,8 @@
   
   
   
-    
-    
-    
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
-        
-          
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    Index
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2">
-            <span class="md-nav__icon md-icon"></span>
-            Index
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
-      <a href="../../Index/archive/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    归档
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Index/friend_link/" class="md-nav__link">
+      <a href="../../friend_link/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -419,14 +377,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -457,7 +407,7 @@
             
   
   <span class="md-ellipsis">
-    Courses
+    ZJU 课程
   </span>
   
 
@@ -467,7 +417,7 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
-            Courses
+            ZJU 课程
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -518,7 +468,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../courses/%E4%B8%93%E4%B8%9A%E5%9F%BA%E7%A1%80%E8%AF%BE/DM/" class="md-nav__link">
+      <a href="../../ZJU%20%E8%AF%BE%E7%A8%8B/%E4%B8%93%E4%B8%9A%E5%9F%BA%E7%A1%80%E8%AF%BE/DM/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -539,7 +489,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../courses/%E4%B8%93%E4%B8%9A%E5%9F%BA%E7%A1%80%E8%AF%BE/fds/" class="md-nav__link">
+      <a href="../../ZJU%20%E8%AF%BE%E7%A8%8B/%E4%B8%93%E4%B8%9A%E5%9F%BA%E7%A1%80%E8%AF%BE/fds/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -608,7 +558,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../courses/%E7%9F%AD%E5%AD%A6%E6%9C%9F%E8%AF%BE%E7%A8%8B/CTF101/" class="md-nav__link">
+      <a href="../../ZJU%20%E8%AF%BE%E7%A8%8B/%E7%9F%AD%E5%AD%A6%E6%9C%9F%E8%AF%BE%E7%A8%8B/CTF101/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -677,7 +627,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../courses/%E9%80%9A%E8%AF%86%E5%BF%85%E4%BF%AE%E8%AF%BE/Caculus/" class="md-nav__link">
+      <a href="../../ZJU%20%E8%AF%BE%E7%A8%8B/%E9%80%9A%E8%AF%86%E5%BF%85%E4%BF%AE%E8%AF%BE/Caculus/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -698,7 +648,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../courses/%E9%80%9A%E8%AF%86%E5%BF%85%E4%BF%AE%E8%AF%BE/Linear%20Algebra/" class="md-nav__link">
+      <a href="../../ZJU%20%E8%AF%BE%E7%A8%8B/%E9%80%9A%E8%AF%86%E5%BF%85%E4%BF%AE%E8%AF%BE/Linear%20Algebra/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -719,7 +669,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../courses/%E9%80%9A%E8%AF%86%E5%BF%85%E4%BF%AE%E8%AF%BE/Physics/" class="md-nav__link">
+      <a href="../../ZJU%20%E8%AF%BE%E7%A8%8B/%E9%80%9A%E8%AF%86%E5%BF%85%E4%BF%AE%E8%AF%BE/Physics/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -777,7 +727,7 @@
             
   
   <span class="md-ellipsis">
-    Programing languages
+    技术积累
   </span>
   
 
@@ -787,9 +737,30 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
-            Programing languages
+            技术积累
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../JS/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    JavaScript 原型链污染漏洞
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
             
               
                 
@@ -811,7 +782,7 @@
           
   
   <span class="md-ellipsis">
-    JavaScript 原型链污染漏洞
+    Git
   </span>
   
 
@@ -822,7 +793,7 @@
         
   
   <span class="md-ellipsis">
-    JavaScript 原型链污染漏洞
+    Git
   </span>
   
 
@@ -844,47 +815,161 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#git_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      什么是Git？
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#git_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      如何安装Git？
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#git_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Git 的基本操作
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Git 的基本操作">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#git_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      在当前目录新建一个git代码库
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
-      引言
+      克隆
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
-      概述
+      保存变更
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
-      原理
+      忽略特殊文件
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
-      影响
+      提交状态
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#_5" class="md-nav__link">
     <span class="md-ellipsis">
-      防护措施
+      提交历史
     </span>
   </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      撤销操作
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      连接远程库
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      库间协作
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      配置和设置
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#git-ssh" class="md-nav__link">
+    <span class="md-ellipsis">
+      什么是Git SSH 秘钥？
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      分支
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      合并分支
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      删除分支
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -904,11 +989,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../git/" class="md-nav__link">
+      <a href="../mkdocs/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Git
+    搭建博客的收获与建议
   </span>
   
 
@@ -925,11 +1010,79 @@
   
   
     <li class="md-nav__item">
-      <a href="../mkdocs/" class="md-nav__link">
+      <a href="../note/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    搭建博客的收获与建议
+    备忘录
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    杂谈
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            杂谈
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E6%9D%82%E8%B0%88/%E5%85%B3%E4%BA%8E%E7%BB%A9%E7%82%B9/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    关于绩点
   </span>
   
 
@@ -973,47 +1126,161 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#git_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      什么是Git？
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#git_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      如何安装Git？
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#git_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Git 的基本操作
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Git 的基本操作">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#git_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      在当前目录新建一个git代码库
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
-      引言
+      克隆
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
-      概述
+      保存变更
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
-      原理
+      忽略特殊文件
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
-      影响
+      提交状态
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#_5" class="md-nav__link">
     <span class="md-ellipsis">
-      防护措施
+      提交历史
     </span>
   </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      撤销操作
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      连接远程库
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      库间协作
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      配置和设置
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#git-ssh" class="md-nav__link">
+    <span class="md-ellipsis">
+      什么是Git SSH 秘钥？
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      分支
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      合并分支
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      删除分支
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1032,48 +1299,160 @@
                   
 
 
-<h1 id="javascript">JavaScript 原型链污染漏洞</h1>
+<h1 id="git">Git</h1>
 <div style="margin-top: -30px; font-size: 0.75em; opacity: 0.7;">
-<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8V2m6.78 1a.69.69 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38-2.5-2.5Z"/></svg></span> 约 601 个字 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3l89.3 89.4-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z"/></svg></span> 13 行代码 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3L12.5 13Z"/></svg></span> 预计阅读时间 2 分钟</p>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8V2m6.78 1a.69.69 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38-2.5-2.5Z"/></svg></span> 约 1605 个字 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3l89.3 89.4-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z"/></svg></span> -6 行代码 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3L12.5 13Z"/></svg></span> 预计阅读时间 5 分钟</p>
 </div>
-<h2 id="_1">引言</h2>
-<p>JavaScript 原型链（Prototype Chain）是实现对象继承的一种重要机制。然而，这种机制也可能带来一些安全隐患，其中最著名的就是原型链污染（Prototype Pollution）漏洞。</p>
-<h2 id="_2">概述</h2>
-<p>在 JavaScript 中，每个对象都有一个内部链接到另一个对象，这个对象被称为其原型（prototype）。当我们访问对象的属性时，如果该属性不存在于对象自身，则 JavaScript 引擎会沿着原型链向上查找，直到找到该属性或到达原型链的顶端 'Object.prototype'。
-<div class="language-java highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">let</span><span class="w"> </span><span class="n">obj</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{};</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="n">console</span><span class="p">.</span><span class="na">log</span><span class="p">(</span><span class="n">obj</span><span class="p">.</span><span class="na">toString</span><span class="p">);</span><span class="w"> </span><span class="c1">// [Function: toString]</span>
+<h2 id="git_1">什么是Git？</h2>
+<p>当今世界上使用最广泛的<font color = red>分布式版本控制器</font>,是一个优质的开源项目。（你无需支付任何费用就可以使用）</p>
+<h2 id="git_2">如何安装Git？</h2>
+<p>和大多数工具一样安装方式因平台而异,可能低年级的同学几乎都是Windows吧。其实对于大多数用户来说，在你不懂这个选项到底代表着什么的情况下默认选项非常明智，<font color = purple>初学者就全选默认吧</font>( bishi),其实还是要注意一下，以免下了半天结果运行不了
+安装完 Git 之后，要做的第一件事就是设置自己的用户名和邮件地址。
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>git config --global user.name &quot;Email Pairs&quot;
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>git config --global user.email &quot;eparis@atlassian.com&quot;
 </span></code></pre></div>
-虽然 obj 对象本身没有 toString 方法，但它的原型链上有。</p>
-<h2 id="_3">原理</h2>
-<p>原型链污染漏洞的核心在于攻击者能够通过不安全的输入操作，修改对象的原型，从而影响到所有通过该原型创建的对象。这通常发生在深度合并（deep merge）或对象克隆等操作中。</p>
-<p>举个例子：
-<div class="language-java highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="n">let</span><span class="w"> </span><span class="n">maliciousPayload</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">JSON</span><span class="p">.</span><span class="na">parse</span><span class="p">(</span><span class="err">&#39;</span><span class="p">{</span><span class="s">&quot;__proto__&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="s">&quot;polluted&quot;</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;yes&quot;</span><span class="p">}}</span><span class="err">&#39;</span><span class="p">);</span>
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="n">let</span><span class="w"> </span><span class="n">target</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{};</span>
-</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="n">Object</span><span class="p">.</span><span class="na">assign</span><span class="p">(</span><span class="n">target</span><span class="p">,</span><span class="w"> </span><span class="n">maliciousPayload</span><span class="p">);</span>
-</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>
-</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="n">console</span><span class="p">.</span><span class="na">log</span><span class="p">({}.</span><span class="na">polluted</span><span class="p">);</span><span class="w"> </span><span class="c1">// yes</span>
+其中global 代表全局配置，当然与此相对应还有local 代表局部配置</p>
+<h2 id="git_3">Git 的基本操作</h2>
+<h3 id="git_4">在当前目录新建一个git代码库</h3>
+<p>初始化：
+  <div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>git init
 </span></code></pre></div>
-在这个示例中，maliciousPayload 对象包含一个特殊的属性 <strong>proto</strong>，用于修改目标对象 target 的原型链。通过 Object.assign 操作，target 对象的原型被污染，导致所有新创建的对象都受影响。</p>
-<h2 id="_4">影响</h2>
-<ol>
-<li>数据完整性：原型链污染可能导致对象属性意外改变，破坏应用的正常功能。</li>
-<li>安全风险：攻击者可以利用原型链污染注入恶意代码，进一步执行跨站脚本攻击（XSS）或远程代码执行（RCE）。</li>
-<li>系统稳定性：原型链污染可能引发难以调试的错误，影响系统的稳定性和可维护性。</li>
-</ol>
-<h2 id="_5">防护措施</h2>
-<ol>
-<li>避免直接使用不可信数据：在处理用户输入的数据时，应避免直接将其用于修改对象的原型。例如，深度合并操作时，应过滤掉 <strong>proto</strong> 属性。</li>
-<li>使用安全的对象合并库：选择经过审查和测试的第三方库进行对象合并操作，例如 lodash 的 merge 函数，它已经处理了原型链污染问题。</li>
-<li>启用严格模式：在严格模式下，某些情况下对原型链的修改会被禁止，可以一定程度上防止原型链污染。</li>
-</ol>
-<p><div class="language-java highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="s">&quot;use strict&quot;</span><span class="p">;</span>
-</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="n">let</span><span class="w"> </span><span class="n">maliciousPayload</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">JSON</span><span class="p">.</span><span class="na">parse</span><span class="p">(</span><span class="err">&#39;</span><span class="p">{</span><span class="s">&quot;__proto__&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="s">&quot;polluted&quot;</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;yes&quot;</span><span class="p">}}</span><span class="err">&#39;</span><span class="p">);</span>
-</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="n">let</span><span class="w"> </span><span class="n">target</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{};</span>
-</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="n">Object</span><span class="p">.</span><span class="na">assign</span><span class="p">(</span><span class="n">target</span><span class="p">,</span><span class="w"> </span><span class="n">maliciousPayload</span><span class="p">);</span>
-</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>
-</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="n">console</span><span class="p">.</span><span class="na">log</span><span class="p">({}.</span><span class="na">polluted</span><span class="p">);</span><span class="w"> </span><span class="c1">// undefined</span>
+  通常这是新项目中运行的第一个命令，大部分命令在未init的情况下不可用。
+  执行此命令将在当前工作目录创建一个新的.git子目录（隐藏文件，也将创建一个新的主分支
+  在未初始化的情况下执行大多数git命令，将会得到以下报错
+  <div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>fatal: not a git repository (or any of the parent directories): .git
 </span></code></pre></div>
-4. 定期审计代码：对代码进行安全审计，及时发现并修复潜在的安全漏洞。</p>
+  也许和你想象的不太一样，你可以安全地在一个已经运行过git init 的项目目录上再次运行该命令。它不会覆盖现有的.git配置。</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>切记：不要手动乱改.git文件，否则会破坏git仓库，.git文件的东西远比你想的要复杂</p>
+</div>
+<h3 id="_1">克隆</h3>
+<p>用于创建远程代码库的副本或克隆。目标代码存储库可以是本地的也可以是远程的。
+  <div class="language-text highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>git clone &lt;repo url&gt;
+</span></code></pre></div>
+  下载一个项目和它的整个代码历史
+  其中url支持多种格式，如Git SSH URL：
+  <div class="language-text highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>git@HOSTNAME:USERNAME/REPONAME.git
+</span></code></pre></div></p>
+<p>!!!note
+    运行git init 和git clone都能在你的电脑上得到一个可用的git仓库，那它们有没有什么区别呢？
+      省流：git clone 依赖于git init
+      实际上 git clone 会先调用git init 来创建新的存储库，然后再从现有存储库中复制数据。</p>
+<h3 id="_2">保存变更</h3>
+<p>git add 会将文件添加到代码库暂存区域并创建一个包含消息的新提交。
+  <div class="language-text highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>git add &lt;file&gt;
+</span></code></pre></div>
+  将指定文件添加到暂存区
+  <div class="language-text highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>git add &lt;directory&gt;
+</span></code></pre></div>
+  添加指定目录到暂存区
+  <div class="language-text highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>git add .
+</span></code></pre></div>
+  将当前目录所有文件添加到暂存区 .代表当前目录
+  而git commit 会将文件提交到项目历史记录中。 
+  git commit -a
+  提交工作区自上次commit的变化，直接到仓库区
+  <div class="language-text highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>git commit -m &quot;commit message&quot;
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>git commit -am &quot;commit message&quot;
+</span></code></pre></div></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>规范格式使用少于50个字符在第一行汇总提交，留一个空行，然后详细解释发生了什么变化。</p>
+</div>
+<h3 id="_3">忽略特殊文件</h3>
+<p>在git工作区的根目录下创建一个特殊的.gitignore文件，然后把要忽略的文件名填进去，git就会自动忽略这些文件。
+  一些常见的被忽略的文件如下。
+  - 依赖性缓存
+  - 编译的代码
+  - 构建输出目录，如/bin、/out或/target
+  - 产生的运行时文件，如.log、.lock或.tmp
+  - 隐藏的系统文件，如Thumbs.db或.DS_Store
+  - 个人IDE配置文件，如.idea/workspace.xml</p>
+<h3 id="_4">提交状态</h3>
+<p>可以使用git status来查看文件状态（可以加-s来简化结果
+  完整的状态消息其实还包括暂存/取消暂存的相关说明。
+  </br>
+  未跟踪文件：
+  - 尚未提交的文件
+  - 编译后的二进制文件（二进制文件其实也可以跟踪，但毫无价值，因为你只能知道一个二进制文件从1kb变到了2kb</p>
+<h3 id="_5">提交历史</h3>
+<p><div class="language-text highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>git log
+</span></code></pre></div>
+  显示已提交快照，可以使用该命令来列出项目历史记录、对其进行筛选并搜索特定的变更。
+  git log 仅在已提交历史记录上运行 
+  从上到下依次是版本号、提交人、时间、提交注释</p>
+<h3 id="_6">撤销操作</h3>
+<p><div class="language-text highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>git reset
+</span></code></pre></div>
+  git add 和 git commit 都可以用git reset来撤销。顺便一提，git reset最适用于撤销本地私有变更。</p>
+<h3 id="_7">连接远程库</h3>
+<p><code>git remote</code>命令允许您创建、查看和删除与其他存储库的连接。
+  可以使用 <code>git remote -v</code>列出与其他存储库的远程链接
+  git remote add <name> <url></p>
+<h3 id="_8">库间协作</h3>
+<p><code>git push</code>命令将代码推送到远程代码库，使其他成员能够访问到这一变更，这里我们用github作为远程仓库
+  创建与远程存储库的新连接
+  <div class="language-text highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>git push &lt;remote&gt;&lt;branch&gt;
+</span></code></pre></div>
+  移除与 ＜name＞ 远程存储库的连接
+  <div class="language-text highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>git remote rm &lt;name&gt;
+</span></code></pre></div>
+  <code>git pull</code>用于从远程存储库获取和下载内容，并更新本地存储库。
+  但实际上git push也是两个命令的组合（逗号前后各对应一个——<code>git fetch</code>+<code>git merge</code>
+  <div class="language-text highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>git pull &lt;remote&gt;
+</span></code></pre></div></p>
+<h3 id="_9">配置和设置</h3>
+<p>显示当前git配置
+  <div class="language-text highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>git config --list
+</span></code></pre></div>
+  将远程代码库URL添加到本地
+  <div class="language-text highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>git push -u &lt;remote_name&gt; &lt;local_branch_name&gt;
+</span><span id="__span-15-2"><a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a>git remote add &lt;remote_name&gt;&lt;remote_repo_url&gt;
+</span></code></pre></div></p>
+<h3 id="git-ssh">什么是Git SSH 秘钥？</h3>
+<p>SSH密钥是SSH网络协议的访问凭证，用于不安全开放网络计算机之间的远程通信
+  如何创建？
+  通过公钥加密算法生成，最常见的是RSA或DSA</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>建议使用ed25519的key:ssh-keygen -t ed25519</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p><font color = red>请注意保护你的私钥。</font>公钥(.pub结尾)可以发给别人或上传到Github Settings中，私钥（无后缀名）永远不要放到网络上。<del>（毕竟你也不想···</del></p>
+</div>
+<h3 id="_10">分支</h3>
+<p>#### 列出储存库中的分支。
+  <div class="language-text highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>git branch 列出所有本地分支
+</span><span id="__span-16-2"><a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a>        -r 列出所有的远程分支
+</span><span id="__span-16-3"><a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a>        -a 显示所有分支
+</span></code></pre></div></p>
+<p>#### 创建分支：
+  分支只是指向提交的指针，存储库的历史记录保持不变，如：
+  <div class="language-text highlight"><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a>git branch &lt;branch name&gt;
+</span></code></pre></div>
+  创建一个新分支，但不切换,  通过checkout来切换分支。
+  <div class="language-text highlight"><pre><span></span><code><span id="__span-18-1"><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>git checkout &lt;branch&gt;
+</span></code></pre></div>
+  创建远程分支必须首先配置远程代码存储库并将其添加到本地代码存储库配置中</p>
+<h3 id="_11">合并分支</h3>
+<p>将指定分支合并到当前分支，需要处理冲突部分（沟通协商、手动解决）
+  <div class="language-text highlight"><pre><span></span><code><span id="__span-19-1"><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a>git merge &lt;branch&gt;
+</span></code></pre></div>
+  </br>
+  将特定 commit 合并进当前分支</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-20-1"><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a>git cherry-pick &lt;commit id&gt;
+</span></code></pre></div>
+<h3 id="_12">删除分支</h3>
+<p>删除本地分支
+  <div class="language-text highlight"><pre><span></span><code><span id="__span-21-1"><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a>git branch -d &lt;branch&gt;
+</span></code></pre></div>
+  <br></br>
+  删除远程分支
+  <div class="language-text highlight"><pre><span></span><code><span id="__span-22-1"><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a>git push &lt;remote&gt; --delete &lt;branch&gt;
+</span><span id="__span-22-2"><a id="__codelineno-22-2" name="__codelineno-22-2" href="#__codelineno-22-2"></a>git branch -dr &lt;remote&gt;/&lt;branch&gt;
+</span></code></pre></div></p>
 
 
 
