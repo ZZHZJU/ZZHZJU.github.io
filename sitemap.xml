@@ -41,7 +41,12 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://zzhzju.github.io/%E6%8A%80%E6%9C%AF%E7%A7%AF%E7%B4%AF/JS/</loc>
+         <loc>https://zzhzju.github.io/programing%20languages/JS/</loc>
+         <lastmod>2024-08-14</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://zzhzju.github.io/programing%20languages/mkdocs/</loc>
          <lastmod>2024-08-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -57,11 +62,6 @@
     </url>
     <url>
          <loc>https://zzhzju.github.io/%E6%8A%80%E6%9C%AF%E7%A7%AF%E7%B4%AF/gnu%20make/</loc>
-         <lastmod>2024-08-14</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://zzhzju.github.io/%E6%8A%80%E6%9C%AF%E7%A7%AF%E7%B4%AF/mkdocs/</loc>
          <lastmod>2024-08-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
